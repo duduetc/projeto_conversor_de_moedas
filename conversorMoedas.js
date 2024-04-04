@@ -11,6 +11,13 @@ let valoresConversao = {
         real: 5.46
     },
 
+    franco: {
+        dolar: 1.11,
+        euro: 1.02,
+        libra: 0.87,
+        real: 5.57
+    },
+
     libra: {
         dolar: 1.27,
         euro: 1.17,

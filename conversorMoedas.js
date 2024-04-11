@@ -33,7 +33,12 @@ let valoresConversao = {
 
 let valorUsuario = document.getElementById("valor-usuario");
 valorUsuario.addEventListener("keypress", function(event) {
-    
+
+    console.log(event);
+
+    if(event.key == "Enter"){
+        converter();
+    }
 });
 
 function converter() {
@@ -43,6 +48,11 @@ function converter() {
     let moedaDestino = document.getElementById("moeda2").value;
 
     let conversao = valorUsuario * valoresConversao[moedaOrigem][moedaDestino];
+
+    if(valorUsuario == ""){
+        alert("O valor não pode ser vazio!");
+        return;
+    }
 
     if(moedaOrigem == moedaDestino){
         alert("As moedas são iguais, não é possível converter");

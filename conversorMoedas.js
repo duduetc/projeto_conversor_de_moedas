@@ -36,6 +36,10 @@ valorUsuario.addEventListener("keypress", function(event) {
 
     console.log(event);
 
+    if(event.ctrlKey == true && event.code == "KeyI"){
+        inverter();
+    }
+
     if(event.key == "Enter"){
         converter();
     }

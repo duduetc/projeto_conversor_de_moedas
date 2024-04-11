@@ -9,22 +9,24 @@
 <body>
     <div class="container">
         <h1 id="titulo">Conversor de Moedas</h1>
-        <input type="text" id="valor-usuario">
+        <input type="number" id="valor-usuario">
         <select name="moeda1" id="moeda1">
             <option value="dolar">Dólar</option>
             <option value="euro">Euro</option>
-            <option value="libra">Libra</option>
-            <option value="real">Real</option>
+            <!-- <option value="franco">Franco Suíço</option> -->
+            <!-- <option value="libra">Libra</option> -->
+            <option value="real" selected>Real</option>
         </select>
         <button onclick="inverter();">Inverter</button>
         <select name="moeda2" id="moeda2">
-            <option value="dolar">Dólar</option>
+            <option value="dolar" selected>Dólar</option>
             <option value="euro">Euro</option>
-            <option value="franco">Franco Suíço</option>
-            <option value="libra">Libra</option>
+            <!-- <option value="franco">Franco Suíço</option> -->
+            <!-- <option value="libra">Libra</option> -->
             <option value="real">Real</option>
         </select>
         <button onclick="converter();">Converter</button>
+        <button onclick="limpar();">Limpar</button>
         <p id="resultado">Resultado:</p>
     </div>
 

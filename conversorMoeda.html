@@ -17,7 +17,7 @@
             <!-- <option value="libra">Libra</option> -->
             <option value="real" selected>Real</option>
         </select>
-        <button onclick="inverter();">Inverter</button>
+        <button id="botao-inverter">Inverter</button>
         <select name="moeda2" id="moeda2">
             <option value="dolar" selected>Dólar</option>
             <option value="euro">Euro</option>
@@ -25,9 +25,13 @@
             <!-- <option value="libra">Libra</option> -->
             <option value="real">Real</option>
         </select>
-        <button onclick="converter();">Converter</button>
-        <button onclick="limpar();">Limpar</button>
+        <button id="botao-converter">Converter</button>
+        <button id="botao-limpar">Limpar</button>
         <p id="resultado">Resultado:</p>
+    </div>
+    <div class="mensagem-usuario">
+        <p>Nosso site processa dados pessoais. Você aceita continuar?</p>
+        <button id="botao-aceita-mensagem">Aceitar</button>
     </div>
 
     <script src="conversorMoedas.js"></script>

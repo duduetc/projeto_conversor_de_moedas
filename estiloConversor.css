@@ -18,3 +18,15 @@ input, select, button /* é possível estilizar tags diferentes ao mesmo tempo, 
     margin-top: 50px;
 }
 
+/* position: fixed; é uma propriedade que prende o elemento*/
+
+.mensagem-usuario {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: bisque;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

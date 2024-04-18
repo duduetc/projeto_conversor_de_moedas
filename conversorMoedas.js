@@ -31,6 +31,20 @@ let valoresConversao = {
     }
 };
 
+/* ao inves de usar o onclick no html, chama esse evento no js */
+
+let botaoConverter = document.getElementById("botao-converter");
+botaoConverter.addEventListener("click", converter); 
+
+let botaoLimpar = document.getElementById("botao-limpar");
+botaoConverter.addEventListener("click", limpar);
+
+let botaoInverter = document.getElementById("botao-innverter");
+botaoConverter.addEventListener("click", inverter);
+
+let botaoAceitaMensagem = document.getElementById("botao-aceita-mensagem");
+botaoAceitaMensagem.addEventListener("click", aceitaMensagem);
+
 let valorUsuario = document.getElementById("valor-usuario");
 valorUsuario.addEventListener("keypress", function(event) {
 
@@ -72,7 +86,7 @@ function converter() {
     }
     if(moedaDestino == "euro"){
         simbolo = "€";
-    }
+    } /* é preciso fazer os ifs dos simbolos de outras moedas */
 
     let paragrafoResultado = document.getElementById("resultado");
     paragrafoResultado.textContent = simbolo + " " + conversao.toFixed(2);
@@ -94,4 +108,8 @@ function limpar() {
 
     valorUsuario.value = "";
     resultado.textContent = "";
+}
+
+function aceitaMensagem() {
+    alert("Usuário aceitou termos do site")
 }
